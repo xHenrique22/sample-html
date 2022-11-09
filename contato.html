@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link href="contato.css" rel="stylesheet">
+    <link href="css/contato.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,6 +26,7 @@
         </nav>       
     </header>
     <hr>
+
     <!-- /Cabeçalho do site -->
 
     <!-- Corpo principal do site -->
@@ -33,23 +34,31 @@
         <section>
             <div>
                 <h1>Entre em contato</h1>
-                <form>
-                    <p>
-                        <label for="name">Nome:</label>
-                        <input name="name" type="text" id="name">
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input name="email" type="email" id="email">
-                    </p>
-                    <p>
-                        <label for="message">Mensagem:</label><br>
-                        <textarea name="message" id="message" cols="30" rows="3"></textarea>
-                    </p>
-                    <p>
-                        <button id="send">Enviar</button>
-                    </p>
-                </form>
+                <form method="post" action="form.php">
+                    <fieldset class="f1">
+                        <legend> Dados Pessoais</legend>
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input name="nome" type="text" placeholder="Seu nome aqui!" required>	
+                       </p>
+                        <p>
+                            <label for="telefone">Telefone</label>
+                            <input name="telefone" type="tel" placeholder="Telefone com DDD" required>
+                        </p>
+                    </fieldset>
+            
+                    <fieldset class="f2">
+                        <legend>Mensagem</legend>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input for="email" type="email">
+                        </p>
+                        <p>
+                            <label for="mensagem">Descreva sua dúvida:</label><br>
+                            <textarea name="mensagem" rows="12" cols="50"  placeholder="Sua mensagem."></textarea>
+                        </p>
+                    </fieldset>
+                </form><br>
             </div>
             <div>
                 <iframe 
