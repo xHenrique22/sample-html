@@ -1,0 +1,76 @@
+/*  Seletores
+    Tag HTML
+    * - TUDO
+
+
+*/
+*{
+    margin:10px;
+    padding: 0px;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+#titulo{
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin: 30px;
+}
+
+.photo{
+    width: 400px;
+}
+
+.social{
+    width: 40px;
+}
+
+.texto:hover{
+    background-color: darkgray;
+}
+
+.texto{
+    font-size:medium;
+}
+
+.mb-5{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 200px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+.container > div {
+    width: 500px;
+}
+
+.nav-button{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.nav-button:hover{
+    background-color: darkgrey;
+}
+
+hr{
+    display: none;
+}
